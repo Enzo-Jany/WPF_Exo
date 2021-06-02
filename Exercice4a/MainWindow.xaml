@@ -1,0 +1,34 @@
+﻿<Window x:Class="Exercice4a.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Exercice4a"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="563.189">
+    <Grid Margin="0,0,-6.333,-0.333">
+
+        
+
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_New" 
+                          Click="menuNew_Click"/>
+                <MenuItem Header="_Save" 
+                           Click="MenuSave_Click"/>
+                <MenuItem Header="_SaveAs" 
+                           Click="MenuSaveAs_Click"/>
+                <MenuItem Header="_Open" 
+                           Click="MenuOpen_Click"/>
+                <MenuItem Header="_Close" 
+                           Click="MenuClose_Click"/>
+            </Menu>
+            <TextBox AcceptsReturn="True" />
+        </DockPanel>
+
+
+        <TextBox
+              x:Name="tbxSaisie" Margin="64,71,64,267"/>
+
+    </Grid>
+</Window>
