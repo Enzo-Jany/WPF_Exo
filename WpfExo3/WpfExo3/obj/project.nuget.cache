@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "SRrptnCzMrLhdynyIGw4TcAFKHX5J46Vf75MYJ6Yqz1qpXW15Rv6/o9C5ktVvCO0/tC5uv5QbzKLu8jZbQFinQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jaenz\\source\\repos\\Exercice\\WpfExo3\\WpfExo3\\WpfExo3.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jaenz\\.nuget\\packages\\materialdesigncolors\\2.0.0\\materialdesigncolors.2.0.0.nupkg.sha512",
+    "C:\\Users\\jaenz\\.nuget\\packages\\materialdesignthemes\\4.0.0\\materialdesignthemes.4.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

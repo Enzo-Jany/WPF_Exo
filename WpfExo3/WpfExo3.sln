@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfExo3", "WpfExo3\WpfExo3.csproj", "{1BDCEFC7-90BF-454F-B987-B9EFBD338BAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BDCEFC7-90BF-454F-B987-B9EFBD338BAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BDCEFC7-90BF-454F-B987-B9EFBD338BAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BDCEFC7-90BF-454F-B987-B9EFBD338BAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BDCEFC7-90BF-454F-B987-B9EFBD338BAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B2C348BC-C2A9-47E7-812B-83F345DF75B6}
+	EndGlobalSection
+EndGlobal

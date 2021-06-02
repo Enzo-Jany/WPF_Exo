@@ -1,0 +1,15 @@
+C:\Développement\Exercice_2b\bin\Debug\Exercice2b.exe.config
+C:\Développement\Exercice_2b\bin\Debug\Exercice2b.exe
+C:\Développement\Exercice_2b\bin\Debug\Exercice2b.pdb
+C:\Développement\Exercice_2b\obj\Debug\Exercice2b.csprojAssemblyReference.cache
+C:\Développement\Exercice_2b\obj\Debug\MainWindow.g.cs
+C:\Développement\Exercice_2b\obj\Debug\App.g.cs
+C:\Développement\Exercice_2b\obj\Debug\Exercice2b_MarkupCompile.cache
+C:\Développement\Exercice_2b\obj\Debug\Exercice2b_MarkupCompile.lref
+C:\Développement\Exercice_2b\obj\Debug\MainWindow.baml
+C:\Développement\Exercice_2b\obj\Debug\Exercice2b.g.resources
+C:\Développement\Exercice_2b\obj\Debug\Exercice2b.Properties.Resources.resources
+C:\Développement\Exercice_2b\obj\Debug\Exercice2b.csproj.GenerateResource.cache
+C:\Développement\Exercice_2b\obj\Debug\Exercice2b.csproj.CoreCompileInputs.cache
+C:\Développement\Exercice_2b\obj\Debug\Exercice2b.exe
+C:\Développement\Exercice_2b\obj\Debug\Exercice2b.pdb

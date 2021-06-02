@@ -1,0 +1,113 @@
+﻿<Window x:Class="WpfExo3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfExo3"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Height="50" MinHeight="30" Margin="0,10,0,10">
+            <TextBox
+              x:Name="Nom"
+              materialDesign:HintAssist.Hint="Nom"
+                Width="150"
+                Height="30" Margin="20,5,0,0">
+                <TextBox.Text>
+                    <Binding
+                      Path="Nom"
+                      UpdateSourceTrigger="PropertyChanged">
+                        <Binding.ValidationRules>
+
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+            <ComboBox materialDesign:HintAssist.Hint="Genre"
+                      Width="100"
+                      Height="30" Margin="20,5,0,0"
+                      Name="Genre">
+                <ComboBoxItem Content="Femme" />
+                <ComboBoxItem Content="Homme" />
+                <ComboBoxItem Content="Autre" />
+            </ComboBox>
+            <TextBox
+              x:Name="Age"
+              materialDesign:HintAssist.Hint="Age"
+                Width="100"
+                Height="30" Margin="20,5,0,0"
+                PreviewTextInput="ValidateNumberType">
+                <TextBox.Text>
+                    <Binding
+                      Path="Age"
+                      UpdateSourceTrigger="PropertyChanged">
+                        <Binding.ValidationRules>
+
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+            <Button
+              Style="{StaticResource MaterialDesignRaisedLightButton}"
+              ToolTip="Resource name: MaterialDesignRaisedLightButton"
+              Content="Ajouter" Margin="50,5,0,0" HorizontalAlignment="Right"
+                Click="AddUser_Click"
+              />
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200" MinWidth="100"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <ListBox
+                IsEnabled="{Binding IsChecked, ElementName=EnableListBox}"
+                Grid.Column="0"
+                x:Name="xUsers"
+                SelectionChanged="OnUserSelected_Change"
+                >
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Nom}"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <GridSplitter Width="5"></GridSplitter>
+            <StackPanel Grid.Column="1">
+                <StackPanel Orientation="Horizontal" Margin="50,20,50,0">
+                    <TextBlock Text="Nom :" TextWrapping="Wrap" Margin="0,0,0,0"/>
+                    <TextBlock Text="" Name="UserName" TextWrapping="Wrap" Margin="20,0,0,0"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="50,20,50,0">
+                    <TextBlock Text="Genre :" TextWrapping="Wrap" Margin="0,0,0,0"/>
+                    <TextBlock Text="" Name="UserGenre" TextWrapping="Wrap" Margin="20,0,0,0"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="50,20,50,0">
+                    <TextBlock Text="Age :" TextWrapping="Wrap" Margin="0,0,0,0"/>
+                    <TextBlock Text="" Name="UserAge" TextWrapping="Wrap" Margin="20,0,0,0"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="50,20,50,0">
+                    <Button Style="{StaticResource MaterialDesignIconForegroundButton}"
+                        ToolTip="MaterialDesignIconForegroundButton"
+                            Click="DeleteUser_Click">
+                        <materialDesign:PackIcon Kind="Delete" Foreground="#C62828"/>
+                    </Button>
+                </StackPanel>
+                
+
+            </StackPanel>
+        </Grid>
+
+        
+    </Grid>
+</Window>
